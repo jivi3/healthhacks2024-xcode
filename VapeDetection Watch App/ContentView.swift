@@ -1,24 +1,21 @@
-//
-//  ContentView.swift
-//  VapeDetection Watch App
-//
-//  Created by Jivi Irivichetty on 10/25/24.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+//    @ObservedObject var connectivityManager = WatchConnectivityManager.shared
+    @ObservedObject var motionManager = MotionManager()
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Hit Detection")
+                .font(.largeTitle)
+                .padding()
+          
+            Text(motionManager.isHitting ? "Hitting" : "Not Hitting")
+                .font(.title)
+                .padding()
+                .background(motionManager.isHitting ? Color.red : Color.green)
+                .foregroundColor(.white)
+                .cornerRadius(10)
+            
         }
-        .padding()
     }
-}
-
-#Preview {
-    ContentView()
 }

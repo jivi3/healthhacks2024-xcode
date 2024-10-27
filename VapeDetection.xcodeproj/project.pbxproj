@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		582EB9982CCB5CA400B161C1 /* VapeDetection Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 582EB9972CCB5CA400B161C1 /* VapeDetection Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		582EB9BA2CCB5DC000B161C1 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 582EB9B92CCB5DC000B161C1 /* WatchConnectivity.framework */; };
+		582EB9BC2CCB5DCA00B161C1 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 582EB9BB2CCB5DCA00B161C1 /* WatchConnectivity.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +39,26 @@
 /* Begin PBXFileReference section */
 		582EB9872CCB5CA200B161C1 /* VapeDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VapeDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		582EB9972CCB5CA400B161C1 /* VapeDetection Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VapeDetection Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		582EB9B92CCB5DC000B161C1 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
+		582EB9BB2CCB5DCA00B161C1 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS11.0.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		582EB9B52CCB5D8000B161C1 /* Exceptions for "VapeDetection" folder in "VapeDetection" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 582EB9862CCB5CA200B161C1 /* VapeDetection */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		582EB9892CCB5CA200B161C1 /* VapeDetection */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				582EB9B52CCB5D8000B161C1 /* Exceptions for "VapeDetection" folder in "VapeDetection" target */,
+			);
 			path = VapeDetection;
 			sourceTree = "<group>";
 		};
@@ -57,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				582EB9BA2CCB5DC000B161C1 /* WatchConnectivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				582EB9BC2CCB5DCA00B161C1 /* WatchConnectivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +94,7 @@
 			children = (
 				582EB9892CCB5CA200B161C1 /* VapeDetection */,
 				582EB99B2CCB5CA400B161C1 /* VapeDetection Watch App */,
+				582EB9B82CCB5DC000B161C1 /* Frameworks */,
 				582EB9882CCB5CA200B161C1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,6 +106,15 @@
 				582EB9972CCB5CA400B161C1 /* VapeDetection Watch App.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		582EB9B82CCB5DC000B161C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				582EB9BB2CCB5DCA00B161C1 /* WatchConnectivity.framework */,
+				582EB9B92CCB5DC000B161C1 /* WatchConnectivity.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,6 +372,7 @@
 				DEVELOPMENT_TEAM = T475J3LJJA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "VapeDetection-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = VapeDetection;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = test.WatchTest.VapeDetection;
@@ -373,6 +403,7 @@
 				DEVELOPMENT_TEAM = T475J3LJJA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "VapeDetection-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = VapeDetection;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = test.WatchTest.VapeDetection;
@@ -404,6 +435,7 @@
 				DEVELOPMENT_TEAM = T475J3LJJA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VapeDetection/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = VapeDetection;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -436,6 +468,7 @@
 				DEVELOPMENT_TEAM = T475J3LJJA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VapeDetection/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = VapeDetection;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
